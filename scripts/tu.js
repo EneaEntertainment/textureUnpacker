@@ -127,7 +127,7 @@ function start()
 
 function onAssetsLoaded(loader, resources)
 {
-    const spritesheet = new PIXI.Spritesheet(resources.image.texture.baseTexture, fileJSON);
+    const spritesheet = new PIXI.Spritesheet(resources.image.texture.baseTexture, fileJSON, fileNameJSON);
 
     spritesheet.parse((result) =>
     {
